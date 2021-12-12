@@ -1,0 +1,1441 @@
+/* =======================
+ importing google fonts
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* ------------------------------------------------------------------------------------ */
+
+html{
+    font-size: 100%;
+}
+
+/*--------------------------
+       Utility Classes
+-----------------------------*/
+
+.span-color {
+    color: var(--main-color);
+}
+
+.roboto {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.font-size {
+    font-size: 65px;
+    font-family: roboto;
+    color: var(--main-color);
+}
+
+
+/*Forms utility classes*/
+
+.form-styling {
+    padding: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-styling:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-textarea {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+
+.form-textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Form Inputs Placeholder Styling*/
+
+.form-styling::placeholder {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.form-textarea::placeholder {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+
+/* -------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: poppins, sans-serif!important;
+}
+
+
+/* ==================
+ Variables Declaration
+====================== */
+
+:root {
+    --main-color: #7857fe;
+    --color-1: #e91e63;
+    --links-hover: rgba(255, 255, 255, 0.5);
+    --btn-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    --beat-btn_1: rgba(255, 255, 255, 0.5);
+    --beat-btn_2: rgba(255, 255, 255, 0.7);
+    --box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===================
+ Navbar Section Starts
+====================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+    padding: 10px 80px;
+}
+
+nav.sticky {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff!important;
+    margin: 0 10px;
+    padding: 0!important;
+    text-decoration: none!important;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: inline-block;
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.brand {
+    color: #fff!important;
+    padding: 0;
+    font-size: 35px;
+    text-decoration: none!important;
+}
+
+ion-icon {
+    display: none;
+}
+
+
+/* =================
+ Navbar Section Ends 
+====================*/
+
+
+/* =======================
+Home Sectio Styling Starts
+========================== */
+
+.home {
+    width: 100%;
+    height: auto;
+}
+
+.home .first-row {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 100px 0 0 0;
+    position: relative;
+    border-radius: 0 0 150px 0;
+}
+
+.home .home-img img {
+    max-width: 250px;
+    width: 100%;
+    animation: bounce 1s ease-in-out infinite 0s alternate;
+}
+
+.home .home-img .circle {
+    width: 390px;
+    height: 390px;
+    border: 2px solid var(--links-hover);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.home .home-img .circle::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--links-hover);
+    border-radius: 50%;
+    transform-origin: 165px 165px;
+    animation: spin 8s linear 0s infinite;
+}
+
+
+/* =========================
+Keyframes for animation roud 
+============================*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================
+Keyframes for animation bounce 
+============================*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+.home-text h1 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.home-text p {
+    color: #fff;
+    text-transform: capitalize;
+    margin: 25px 0;
+}
+
+.home .home-btn .btn-1 {
+    background-color: #fff;
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: var(--main-color);
+    box-shadow: var(--btn-shadow);
+    transition: 0.2s ease;
+}
+
+.home .home-btn .btn-2 {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 17px;
+    animation: beat 2s ease infinite;
+}
+
+.home .home-btn .btn-2:hover {
+    animation: none;
+    color: #fff;
+}
+
+
+/* =========================
+Play Button Animation 
+============================ */
+
+@keyframes beat {
+    0% {
+        transform: scale(0.90);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    75% {
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.90);
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
+    }
+}
+
+.home .home-btn .btn-2 i {
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.home .home-btn .btn-1:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.modal-dialog .modal-content {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.modal-dialog .modal-content .modal-body {
+    padding: 0;
+}
+
+.modal-dialog .modal-content .modal-header button {
+    padding: 0;
+    outline: none;
+}
+
+
+/* ==========================
+ Home Section Styling Ends
+============================= */
+
+
+/* =============================
+ Features Section Styling Starts
+ =============================== */
+
+.features {
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.features .features-heading {
+    padding: 70px 0;
+}
+
+.features .features-heading h1 span {
+    color: var(--main-color);
+}
+
+.features .features-heading h1 {
+    font-family: roboto;
+}
+
+.features-item {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.features-item .icon i {
+    font-size: 30px;
+    color: var(--main-color);
+    position: relative;
+    z-index: 110;
+}
+
+.features-item:hover .features-card-hover {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.features-item:hover .features-card-hover::after {
+    left: -9px;
+    opacity: 1;
+}
+
+.features-item .features-card-hover::after {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -12px;
+    left: 70px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s ease;
+    border-radius: 8px;
+}
+
+.features-item .features-item-2::after {
+    top: -10px;
+}
+
+.features-item:hover .features-item-2::after {
+    left: -12px;
+}
+
+.features-item:hover .features-item-3::after {
+    left: -12px;
+}
+
+.features-item .icons-effect {
+    position: absolute;
+    color: red;
+}
+
+.features-item .first-circle {
+    left: 7px;
+    font-size: 25px;
+}
+
+.features-item::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.features-item::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #FF9800;
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.features-item:hover::after {
+    opacity: 1;
+    right: 30px;
+}
+
+.features-item:hover::before {
+    opacity: 1;
+    left: 30px;
+}
+
+
+/* ======================
+ Floating icons Effect
+========================= */
+
+.effects-wrap .effect {
+    position: absolute;
+}
+
+.effects-wrap .effect-1 {
+    top: 85%;
+    left: 5%;
+    font-size: 17px;
+    color: #5DADE2;
+    animation: bounce 1.2s ease-in-out infinite 0s alternate;
+}
+
+.effects-wrap .effect-2 {
+    top: 20%;
+    left: 25%;
+    font-size: 20px;
+    color: #F39C12;
+    animation: spin 2.5s linear infinite 0s;
+}
+
+.effects-wrap .effect-3 {
+    top: 25%;
+    left: 90%;
+    font-size: 20px;
+    color: silver;
+    animation: spin 2.5s linear infinite 0s;
+}
+
+
+/* ============================
+ Features Section Styling Ends
+=============================== */
+
+
+/* ===============================
+ Fun Facts Section Styling Starts 
+==================================*/
+
+.facts {
+    width: 100%;
+    height: auto;
+    background-color: ghostwhite;
+    padding: 100px 50px 50px 50px;
+}
+
+.facts .facts-img img {
+    max-width: 250px;
+    width: 100%;
+    animation: bounce 1.5s ease-in-out infinite 0s alternate;
+}
+
+.text h1 span {
+    color: var(--main-color);
+    margin-top: 25px;
+}
+
+.text p {
+    margin-top: 20px;
+}
+
+.fun-facts-box {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.fun-facts-box h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.fun-facts-box p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.fun-box-1 {
+    background-color: #DC143C;
+}
+
+.fun-box-2 {
+    background-color: #FFA500;
+}
+
+.fun-box-3 {
+    background-color: #58D68D;
+}
+
+.fun-box-4 {
+    background-color: var(--main-color);
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+}
+
+.row-1 {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 100px 20px 40px 20px;
+}
+
+.screenshot .sc-text {
+    margin-bottom: 20px;
+}
+
+.screenshot .sc-text h1 span {
+    color: var(--main-color);
+}
+
+.sc-img img {
+    max-width: 250px;
+    width: 100%;
+}
+
+.row-2 {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(120, 87, 254, 0.5), rgba(120, 87, 254, 0.5)), url(img/download-app-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+}
+
+.sc-heading {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.row-2 .download-card {
+    padding: 30px 20px;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    background-color: #ffff!important;
+}
+
+.row-2 .download-card .ic {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.row-2 .download-card .btn-3 {
+    color: var(--main-color);
+    background-color: #fff;
+    padding: 7px 16px;
+    border-radius: 20px;
+    box-shadow: var(--btn-shadow);
+    transition: 0.4s ease;
+}
+
+.row-2 .download-card .btn-3:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+/*------------------------------------
+ How it Work Section Styling Starts 
+-------------------------------------*/
+
+.how-it-works {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.step {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    font-size: 35px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.how-content h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.how-content {
+    position: relative;
+    padding: 20px;
+}
+
+.how-content .line::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50px;
+    left: -143px;
+}
+
+.how-content p {
+    font-size: 14px;
+    color: #000;
+    margin: 15px 0;
+}
+
+.how-it-works-heading {
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+
+/*------------------------------------
+ How it Work Section Styling Ends 
+-------------------------------------*/
+
+
+/*---------------------------------
+ Testimonial Section Styling Starts
+-----------------------------------*/
+
+.testimonial {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background-color: ghostwhite;
+}
+
+.testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial-card .card-img img {
+    border: 4px solid var(--main-color);
+}
+
+.card-img::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-weight: 900;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    color: #fff;
+    padding-top: 3px;
+    border-radius: 50%;
+    margin-left: -17px;
+}
+
+.ratings .fa-star {
+    color: #FFAC1C;
+}
+
+
+/*---------------------------------
+ Testimonial Section Styling Ends
+-----------------------------------*/
+
+
+/*------------------------------------
+ Pricing Cards Section Styling Starts
+--------------------------------------*/
+
+.pricing {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.pricing-title {
+    padding: 80px 0;
+}
+
+.card-title span {
+    display: inline-block;
+}
+
+.pricing .card-title .sp-1 {
+    margin-top: 12px;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+.pricing .card-title .sp-3 {
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.pricing .card-body {
+    padding: 5px 40px;
+}
+
+.pricing .card-body ul li {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-bottom: 0.01em solid silver;
+}
+
+.pricing .card-body ul li .fa-check {
+    margin-right: 10px;
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.pricing .card-body li:nth-child(5) {
+    border-bottom: none;
+}
+
+.pricing .card {
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.btn-container .btn-4 {
+    background-color: var(--main-color);
+    padding: 9px 15px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s ease;
+}
+
+.btn-container .btn-4:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+
+/*------------------------------------
+ Pricing Cards Section Styling Ends
+--------------------------------------*/
+
+
+/*------------------------------------
+ Team Members Sections Styling Starts
+--------------------------------------*/
+
+.team {
+    width: 100%;
+    height: auto;
+    background-color: ghostwhite;
+    padding: 20px;
+}
+
+.team-container-heading {
+    padding: 40px 0;
+}
+
+.team .thumbnail {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+}
+
+.team .thumbnail img {
+    max-width: 230px;
+    width: 100%;
+}
+
+
+/*------------------------------------
+ Team Members Sections Styling Ends
+--------------------------------------*/
+
+
+/*-------------------------
+ FAQ Section Styling Starts
+---------------------------*/
+
+.faq {
+    width: 100%;
+    min-height: 50vh;
+    padding-bottom: 50px;
+}
+
+.faq .faq-heading {
+    padding: 50px 0;
+}
+
+.faq .card {
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.faq .card-header {
+    background-color: #fff;
+    padding: 8px 5px;
+    border-radius: 0;
+    border-bottom: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq .card-header h3 {
+    font-size: 17px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+.faq .btn:focus {
+    box-shadow: none;
+}
+
+.faq .card .card-body {
+    padding: 14px 25px;
+    background-color: ghostwhite;
+}
+
+.faq .card .card-body p {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/*-----------------------
+ FAQ Section Styling Ends
+-------------------------*/
+
+
+/*--------------------------------
+ contact us section styling starts
+----------------------------------*/
+
+.contact {
+    width: 100%;
+    background-color: ghostwhite;
+    padding: 40px 40px 80px;
+}
+
+.contact-title {
+    padding: 60px 0;
+}
+
+.contact-info .contact-content {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.contact-info i {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-size: 20px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.contact-info h4 {
+    font-size: 17px;
+}
+
+.contact-info p {
+    font-size: 13px;
+    margin-top: -6px;
+}
+
+form input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+
+/*--------------------------------
+ contact us section styling Ends
+----------------------------------*/
+
+
+/*---------------------------
+ footer section styling start
+-----------------------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 0;
+    background-color: var(--main-color);
+}
+
+.about-us p {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.2s;
+    display: block;
+}
+
+footer ul li:hover {
+    transform: translateX(8px);
+}
+
+footer .credit {
+    padding: 15px 0;
+}
+
+footer .credit p {
+    color: #fff;
+}
+
+
+/*---------------------------
+ footer section styling Ends
+-----------------------------*/
+
+
+/*-------------------------
+ Responsive Styling Starts
+---------------------------*/
+
+
+/*---------For Mobiel View-----------*/
+
+@media only screen and (max-width: 576px) {
+    #text-container {
+        margin-bottom: 50px;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home-text p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .home-text {
+        text-align: justify!important;
+    }
+    .buttons-container {
+        text-align: center;
+    }
+    .home .home-img .circle {
+        width: 270px;
+        height: 270px;
+    }
+    .home .home-img .circle::before {
+        top: 10px;
+        left: 36px;
+        width: 30px;
+        height: 30px;
+        transform-origin: 97px 120px;
+    }
+    nav {
+        padding: 15px 10px;
+    }
+    nav .brand {
+        font-size: 28px;
+    }
+    .effects-wrap .effect-2 {
+        top: 16%;
+        left: 5%;
+    }
+    .effects-wrap .effect-3 {
+        top: 29%;
+        left: 90%;
+    }
+    .features .features-heading h1 {
+        font-size: 30px;
+    }
+    .features .features-heading {
+        padding: 45px 0;
+    }
+    .features-item {
+        margin-bottom: 20px;
+    }
+    .features {
+        padding-bottom: 30px;
+    }
+    .facts {
+        padding: 5px;
+    }
+    .fun-facts-box {
+        margin-bottom: 20px;
+    }
+    .screennshot-content h1 {
+        font-size: 32px;
+        margin-top: 8px;
+    }
+    .screennshot-content p {
+        text-align: justify;
+    }
+    .screenshot .sc-3 {
+        display: none;
+    }
+    .row-1 {
+        padding: 20px 10px;
+    }
+    .screenshot .sc-text h1 {
+        font-size: 30px;
+    }
+    .screenshot .sc-text {
+        margin-bottom: 40px;
+    }
+    .sc-heading {
+        padding: 30px;
+    }
+    .row-2 {
+        padding-bottom: 50px;
+    }
+    .row-2 .container-fluid {
+        padding: 0 30px!important;
+    }
+    .row-2 .download-card {
+        margin-bottom: 20px;
+    }
+    .how-content {
+        box-shadow: var(--box-shadow);
+        margin-bottom: 25px;
+        border-radius: 8px;
+    }
+    .how-content .line::before {
+        content: none;
+    }
+    .how-it-works {
+        padding: 20px;
+    }
+    .how-it-works-heading {
+        padding: 18px 0;
+        margin-bottom: 0px;
+    }
+    .how-it-works-heading h1 {
+        font-size: 32px;
+    }
+    .testimonial {
+        padding: 15px 0;
+    }
+    .testimonial .card-padding {
+        padding: 0 25px!important;
+    }
+    .testimonial-title {
+        padding: 20px!important;
+    }
+    .testimonial-title h1 {
+        font-size: 32px;
+    }
+    .testimonial-card {
+        margin-bottom: 18px;
+    }
+    .pricing {
+        padding-bottom: 20px;
+    }
+    .pricing-title {
+        padding: 20px 0;
+    }
+    .pricing-title h1 {
+        font-size: 32px;
+    }
+    .pricing .card {
+        margin-bottom: 25px;
+    }
+    .team {
+        padding: 8px;
+    }
+    .team-container-heading {
+        padding: 15px 0;
+    }
+    .team-container-heading h1 {
+        font-size: 34px;
+    }
+    .team .thumbnail {
+        margin-bottom: 20px;
+    }
+    .faq .faq-heading {
+        padding: 20px 0;
+    }
+    .faq .faq-heading h1 {
+        font-size: 30px;
+    }
+    .faq .card-header h3 {
+        font-size: 13px;
+    }
+    .contact {
+        padding: 20px 10px 40px;
+    }
+    .contact-title {
+        padding: 10px 0;
+    }
+    .contact-title h1 {
+        font-size: 30px;
+    }
+    .contact-us-heading h4 {
+        font-size: 19px;
+    }
+    .about-us {
+        text-align: center;
+    }
+    .about-us p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .company {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+
+/*---------For Tablets View-----------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #text-container {
+        margin-bottom: 70px;
+    }
+    .home-text h1 {
+        font-size: 37px;
+        text-align: center;
+    }
+    .home-text p {
+        font-size: 18px;
+        margin: 20px 0 25px;
+    }
+    .home-text {
+        text-align: justify!important;
+    }
+    .buttons-container {
+        text-align: center;
+    }
+    nav {
+        padding: 15px 10px;
+    }
+    nav .brand {
+        font-size: 33px;
+    }
+    .effects-wrap .effect-2 {
+        top: 13%;
+        left: 5%;
+    }
+    .effects-wrap .effect-3 {
+        top: 34%;
+        left: 90%;
+    }
+    .features-item-3 {
+        margin-top: 28px;
+    }
+    .features .features-heading h1 {
+        font-size: 45px;
+    }
+    .features .features-heading {
+        padding: 25px 0;
+    }
+    .features {
+        padding-bottom: 30px;
+    }
+    .fa-bars {
+        font-size: 30px;
+    }
+    .facts {
+        padding: 10px;
+    }
+    .fun-facts-box {
+        margin-bottom: 30px;
+    }
+    .screennshot-content h1 {
+        font-size: 45px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .screennshot-content p {
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 0 35px;
+    }
+    .screenshot .sc-3 {
+        display: none;
+    }
+    .screenshot .sc-3 {
+        display: none;
+    }
+    .row-1 {
+        padding: 0px 20px 20px;
+    }
+    .screenshot .sc-text {
+        padding: 20px 0;
+    }
+    .d-c-3 {
+        margin-top: 22px;
+    }
+    .row-2 {
+        padding-bottom: 20px;
+    }
+    .row-2 .container-fluid {
+        padding: 0 20px!important;
+    }
+    .sc-heading {
+        padding: 40px 0;
+    }
+    .how-content {
+        box-shadow: var(--box-shadow);
+        margin-bottom: 25px;
+        border-radius: 8px;
+    }
+    .how-content .line::before {
+        content: none;
+    }
+    .how-it-works {
+        padding: 10px;
+    }
+    .how-it-works-heading {
+        padding: 40px 0;
+        margin-bottom: 0px;
+    }
+    .how-it-works-heading h1 {
+        font-size: 44px;
+    }
+    .testimonial {
+        padding: 15px 0;
+    }
+    .testimonial-title {
+        padding: 20px!important;
+    }
+    .testimonial-title h1 {
+        font-size: 44px;
+        font-family: roboto;
+    }
+    .t-c-3 {
+        margin-top: 20px;
+    }
+    .pricing {
+        padding-bottom: 20px;
+    }
+    .pricing-title {
+        padding: 30px 0;
+    }
+    .pricing-title h1 {
+        font-size: 44px;
+        font-family: roboto;
+    }
+    .p-c-3 {
+        margin-top: 30px;
+    }
+    .team {
+        padding: 8px;
+    }
+    .team-container-heading {
+        padding: 20px 0;
+    }
+    .team-container-heading h1 {
+        font-size: 44px;
+        font-family: roboto;
+    }
+    .team .thumbnail-3 {
+        margin-top: 30px;
+    }
+    .faq .faq-heading {
+        padding: 20px 0;
+    }
+    .faq .faq-heading h1 {
+        font-size: 44px;
+    }
+    .faq .card-header h3 {
+        font-size: 15px;
+    }
+    .contact {
+        padding: 20px 10px 40px;
+    }
+    .contact-title {
+        padding: 10px 0;
+    }
+    .contact-title h1 {
+        font-size: 44px;
+    }
+    .contact-us-heading h4 {
+        font-size: 19px;
+    }
+    .about-us {
+        text-align: center;
+    }
+    .about-us p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .company {
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 6px;
+    }
+    footer ul li {
+        list-style-type: none;
+        font-family: Montserrat;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 17px;
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: 0.2s;
+        display: block;
+    }
+}
+
+
+/* Responsive Navbar */
+
+@media only screen and (max-width: 992px) {
+    nav {
+        align-items: center;
+    }
+    ion-icon {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 80%;
+        background: #fff;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    .menu.active {
+        left: 0%;
+    }
+    .menu li {
+        display: block;
+        margin: 40px 0;
+    }
+    .menu li a {
+        font-size: 18px;
+        color: var(--main-color)!important;
+        cursor: pointer;
+    }
+    #close {
+        color: var(--main-color);
+        position: absolute;
+        top: 15px;
+        left: 88%;
+        font-size: 30px;
+    }
+    nav ul li a::after {
+        content: none;
+    }
+}

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App landing page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Js And Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome 5 CDN -->
+    <script src="https://kit.fontawesome.com/942094c517.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Karla">
+</head>
+
+<body>
+    <!-- container of whole website -->
+    <section class="main-container">
+        <!-- Navigation bar Starts-->
+        <nav class=" fixed-top" id="nav">
+            <!-- Brand -->
+            <div>
+                <a class="brand" href="index.html">Web Dev</a>
+            </div>
+            <!-- Navbar links -->
+            <ion-icon name="menu-outline" id="click"></ion-icon>
+            <ul class="menu" id="toggle">
+                <ion-icon name="close-outline" id="close"></ion-icon>
+                <li>
+                    <a href="#homepage">home</a>
+                </li>
+                <li>
+                    <a href="#ftures">features</a>
+                </li>
+                <li>
+                    <a href="#screenshots">screenshots</a>
+                </li>
+                <li>
+                    <a href="#testimonials">testimonials</a>
+                </li>
+                <li>
+                    <a href="#prcng">pricing</a>
+                </li>
+                <li>
+                    <a href="#contact-us">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation bar Ends-->
+        <!-- Home Sections Starts -->
+        <section class="home" id="homepage">
+            <div class="first-row">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7" id="text-container">
+                            <div class="home-text">
+                                <h1>best mobile app template<br>for your business.</h1>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A in vero reprehenderit, nulla recusandae suscipit ab totam, eligendi cum, numquam soluta doloribus quo magni reiciendis distinctio itaque corporis veritatis sunt.</p>
+                            </div>
+                            <div class="home-btn">
+                                <div class="buttons-container">
+                                    <a href="https://play.google.com/store/apps/details?id=com.github.android" class="btn-1 text-decoration-none" target="_blank">Download App</a>
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn btn-1 btn-2" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-play"></i></a>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header" style="border: none;">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <i class="fas fa-times" style="color: #fff;"></i>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/QE5oQh63gGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; -media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-center">
+                            <div class="home-img">
+                                <div class="circle"></div>
+                                <img src="img/app-screenshots/1.png" alt="app-screenshots">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Icons On the Screen starts-->
+                <div class="effects-wrap d-inline">
+                    <i class="fas fa-circle-notch effect-1 effect"></i>
+                    <i class="fas fa-plus effect-2 effect"></i>
+                    <i class="fas fa-plus effect-3 effect"></i>
+                </div>
+                <!-- Animated Icons On the Screen Ends-->
+            </div>
+            <!-- Features Section Starts -->
+            <section class="features">
+                <div class="features-heading text-center">
+                    <h1 class="font-weight-bold">Awesome <span>Features</span></h1>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 cl">
+                            <div class="features-item text-center px-2 py-3">
+                                <div class="icon mt-3">
+                                    <i class="fas fa-code features-card-hover"></i>
+                                </div>
+                                <div class="card-heading">
+                                    <h4 class="font-weight-bold mt-4">Clean Code</h4>
+                                </div>
+                                <div class="card-para mt-4">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 cl">
+                            <div class="features-item text-center px-2 py-3">
+                                <div class="icon mt-3">
+                                    <i class="fas fa-edit features-card-hover features-item-2"></i>
+                                </div>
+                                <div class="card-heading">
+                                    <h4 class="font-weight-bold mt-4">Auto Install System</h4>
+                                </div>
+                                <div class="card-para mt-4">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 cl">
+                            <div class="features-item features-item-3 text-center px-2 py-3" style="margin-bottom: 0;">
+                                <div class="icon mt-lg-3">
+                                    <i class="fas fa-paint-brush features-card-hover features-item-3"></i>
+                                </div>
+                                <div class="card-heading">
+                                    <h4 class="font-weight-bold mt-4">Pixel Perfect Design</h4>
+                                </div>
+                                <div class="card-para mt-4">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features Section Ends -->
+        </section>
+        <!-- Home Section Ends -->
+
+        <!-- Fun Facts Section Starts -->
+        <section class="facts" id="ftures">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-lg-6">
+                        <div class="facts-img text-center">
+                            <img src="img/app-screenshots/2.png" alt="app-screenshots">
+                        </div>
+                    </div>
+                    <!-- right column -->
+                    <div class="col-lg-6">
+                        <div class="screennshot-content">
+                            <div class="text">
+                                <h1 class="text-capitalize font-weight-bold">fun <span>facts</span></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quo veritatis accusamus rem commodi provident rerum est qui modi quis quaerat eveniet, numquam.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="fun-facts-box fun-box-1 text-center">
+                                    <h1>4000</h1>
+                                    <p class="text-capitalize">downloads</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="fun-facts-box fun-box-2 text-center">
+                                    <h1>200</h1>
+                                    <p class="text-capitalize">likes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="fun-facts-box fun-box-3 text-center">
+                                    <h1>500</h1>
+                                    <p class="text-capitalize">5 star ratings</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="fun-facts-box fun-box-4 fun-box-4 text-center">
+                                    <h1>150</h1>
+                                    <p class="text-capitalize">awards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fun Facts Section Ends -->
+        <!-- App Screenshot Section Start -->
+        <section class="screenshot" id="screenshots">
+            <div class="row-1">
+                <div class="sc-text text-center">
+                    <h1 class="text-capitalize font-weight-bold">app <span>screenshots</span></h1>
+                </div>
+                <!-- row one of screentshot section -->
+                <div class="container-fluid px-4 mt-lg-5">
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="sc-img">
+                                <img src="img/app-screenshots/1.png" alt="app-screenshots">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="sc-img">
+                                <img src="img/app-screenshots/2.png" alt="app-screenshots">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="sc-img sc-3">
+                                <img src="img/app-screenshots/3.png" alt="app-screenshots">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row two of screenshot section -->
+            <div class="row-2">
+                <div class="sc-heading">
+                    <h1 class="text-capitalize font-weight-bold text-white">download <span class="span-color">app</span></h1>
+                </div>
+                <div class="container-fluid" style="padding: 0 80px;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="download-card text-center">
+                                <i class="fab fa-google-play ic"></i>
+                                <h2 class="text-capitalize font-weight-bold mb-3">google play</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, esse!</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.linkedin.android" class="d-inline-block text-capitalize text-decoration-none btn-3" target="_blank"> download now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="download-card text-center">
+                                <i class="fab fa-apple ic ic-2" style="font-size: 35px;"></i>
+                                <h2 class="text-capitalize font-weight-bold mb-3">apple store</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, esse!</p>
+                                <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login" class="d-inline-block text-capitalize text-decoration-none btn-3" target="_blank"> download now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="download-card d-c-3 text-center" style="margin-bottom: 0;">
+                                <i class="fab fa-windows ic"></i>
+                                <h2 class="text-capitalize font-weight-bold mb-3">microsoft store</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, esse!</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.quora.android" class="d-inline-block text-capitalize text-decoration-none btn-3" target="_blank"> download now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App Screenshot Section End -->
+        <!-- How It Work Section Starts -->
+        <section class="how-it-works">
+            <div class="how-it-works-heading text-center">
+                <h1 class="text-capitalize font-weight-bold">
+                    how it <span class="span-color">works</span>
+                </h1>
+            </div>
+            <div class="container">
+                <di v class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="how-content text-center">
+                            <div class="how-heading step">
+                                1
+                            </div>
+                            <h4>Download</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi error perspiciatis repellendus reiciendis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="how-content text-center">
+                            <div class="how-heading step line">
+                                2
+                            </div>
+                            <h4>Creat Profile</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi error perspiciatis repellendus reiciendis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="how-content text-center">
+                            <div class="how-heading step line">
+                                3
+                            </div>
+                            <h4>Search Product</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi error perspiciatis repellendus reiciendis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="how-content text-center" style="margin-bottom: 0;">
+                            <div class="how-heading step line">
+                                4
+                            </div>
+                            <h4>order</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi error perspiciatis repellendus reiciendis.</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <!-- How It Work  Section Ends -->
+        <!-- Testimonial Section Starts -->
+        <section class="testimonial" id="testimonials">
+            <div class="testimonial-title text-center" style="padding: 40px 0">
+                <h1 class="text-capitalize font-weight-bold">what our <span class="span-color">client</span> say</h1>
+            </div>
+            <div class="container px-lg-5 card-padding">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card rounded-lg text-center">
+                            <div class="card-img">
+                                <img src="img/testimonial/1.jpg" alt="Testimonial" class="rounded-circle">
+                            </div>
+                            <p class="my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus neque autem alias.</p>
+                            <h4 class="text-capitalize font-weight-bold">upesh kumar</h4>
+                            <p class="text-muted" style="margin-top: -5px; font-size: 13px;">UI Designer</p>
+                            <div class="ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card rounded-lg text-center">
+                            <div class="card-img">
+                                <img src="img/testimonial/2.jpg" alt="Testimonial" class="rounded-circle">
+                            </div>
+                            <p class="my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus neque autem alias.</p>
+                            <h4 class="text-capitalize font-weight-bold">samaira</h4>
+                            <p class="text-muted" style="margin-top: -5px; font-size: 13px;">UX Designer</p>
+                            <div class="ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card t-c-3 rounded-lg text-center">
+                            <div class="card-img">
+                                <img src="img/testimonial/3.jpg" alt="Testimonial" class="rounded-circle d-inline-block q">
+                            </div>
+                            <p class="my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus neque autem alias.</p>
+                            <h4 class="text-capitalize font-weight-bold">Fahad Saifi</h4>
+                            <p class="text-muted" style="margin-top: -5px; font-size: 13px;">Front End Developer</p>
+                            <div class="ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section Ends -->
+        <!-- Pricing Section Starts -->
+        <section class="pricing" id="prcng">
+            <div class="pricing-title text-center">
+                <h1 class="text-capitalize font-weight-bold roboto">pricing <span class="span-color">plan</span></h1>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="pricing-card-container">
+                            <div class="card">
+                                <div class="card-header text-center p-0 m-0 " style="background: transparent; ">
+                                    <h2 class="font-weight-bold " style="font-family: roboto; ">Basic</h2>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="d-flex justify-content-center card-title ">
+                                        <span class="sp-1 text-muted card-text ">$</span>
+                                        <span class="font-size sp-2 card-text ">99</span>
+                                        <span class="sp-3 text-muted card-text ">/Monthly</span>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check "></i>5GB Bandwidth</li>
+                                        <li><i class="fas fa-check "></i>Free Update</li>
+                                        <li><i class="fas fa-check "></i>High regulation pricing</li>
+                                        <li><i class="fas fa-check "></i>Branding</li>
+                                        <li><i class="fas fa-check "></i>Another Great Feature</li>
+                                    </ul>
+                                    <div class="btn-container pb-3 pt-2 text-center">
+                                        <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank" class="d-inline-block text-capitalize btn-4 text-decoration-none">get started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="pricing-card-container">
+                            <div class="card">
+                                <div class="card-header text-center p-0 m-0 " style="background: transparent; ">
+                                    <h2 class="font-weight-bold " style="font-family: roboto; ">Premium</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center card-title ">
+                                        <span class="sp-1 text-muted card-text ">$</span>
+                                        <span class="font-size sp-2 card-text ">149</span>
+                                        <span class="sp-3 text-muted card-text ">/Monthly</span>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check "></i>5GB Bandwidth</li>
+                                        <li><i class="fas fa-check "></i>Free Update</li>
+                                        <li><i class="fas fa-check "></i>High regulation pricing</li>
+                                        <li><i class="fas fa-check "></i>Branding</li>
+                                        <li><i class="fas fa-check "></i>Another Great Feature</li>
+                                    </ul>
+                                    <div class="btn-container pb-3 pt-2 text-center">
+                                        <a href="https://getbootstrap.com/" target="_blank" class="d-inline-block text-capitalize btn-4 text-decoration-none">get started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="pricing-card-container p-c-3">
+                            <div class="card">
+                                <div class="card-header text-center p-0 m-0" style="background: transparent;">
+                                    <h2 class="font-weight-bold" style="font-family: roboto;">Ultimate</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center card-title">
+                                        <span class="sp-1 text-muted card-text">$</span>
+                                        <span class="font-size sp-2 card-text">199</span>
+                                        <span class="sp-3 text-muted card-text">/Monthly</span>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i>5GB Bandwidth</li>
+                                        <li><i class="fas fa-check"></i>Free Update</li>
+                                        <li><i class="fas fa-check"></i>High regulation pricing</li>
+                                        <li><i class="fas fa-check"></i>Branding</li>
+                                        <li><i class="fas fa-check"></i>Another Great Feature</li>
+                                    </ul>
+                                    <div class="btn-container pb-3 pt-2 text-center">
+                                        <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="d-inline-block text-capitalize btn-4 text-decoration-none">get started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Section Ends -->
+        <!-- Team Members Section Starts -->
+        <section class="team">
+            <div class="team-container-heading text-center">
+                <h1 class="text-capitalize roboto">team <span class="span-color">members</span></h1>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="thumbnail thumbnail-1 text-center">
+                            <img src="img/team/1.jpg" alt="__team" class="text-center">
+                            <div class="thumbnail-content p-0 m-0">
+                                <h5 class="font-weight-bold text-left mt-2">Annabelle</h5>
+                                <p class="text-muted text-left" style="margin-top: -5px; font-size: 13px;">UI Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="thumbnail thumbnail-1 text-center">
+                            <img src="img/team/4.jpg" alt="__team" class="text-center">
+                            <div class="thumbnail-content p-0 m-0">
+                                <h5 class="font-weight-bold text-left mt-2">Fahad Saifi</h5>
+                                <p class="text-muted text-left" style="margin-top: -5px; font-size: 13px;">Front End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-md-6 d-flex justify-content-center">
+                        <div class="thumbnail thumbnail-3 text-center">
+                            <img src="img/team/5.jpg" alt="__team" class="text-center">
+                            <div class="thumbnail-content p-0 m-0">
+                                <h5 class="font-weight-bold text-left mt-2">Angela</h5>
+                                <p class="text-muted text-left" style="margin-top: -5px; font-size: 13px;">Backend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Members Section Ends -->
+        <!-- Frequently Asked Question Section Starts -->
+        <section class="faq">
+            <div class="faq-heading text-center">
+                <h1 class="roboto text-capitalize">frequently <span class="span-color">asked</span> questions</h1>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-decoration-none" data-toggle="collapse" data-target="#collapseOne">
+                                        <h3 class="text-capitalize">100% responsive - fits any device perfectly</h3>
+                                  </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro quidem dolorem quisquam? Magni adipisci delectus ullam repellat veritatis neque cumque perferendis autem itaque odio ea tempore vitae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse" data-target="#collapseTwo">
+                                            <h3 class="text-capitalize">clean code</h3>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro quidem dolorem quisquam? Magni adipisci delectus ullam repellat veritatis neque cumque perferendis autem itaque odio ea tempore vitae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse" data-target="#collapseThree">
+                                            <h3 class="text-capitalize">flat,modern and clean design.</h3>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro quidem dolorem quisquam? Magni adipisci delectus ullam repellat veritatis neque cumque perferendis autem itaque odio ea tempore vitae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse" data-target="#collapsefour">
+                                        <h3 class="text-capitalize">custom font support</h3>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsefour" class="collapse">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro quidem dolorem quisquam? Magni adipisci delectus ullam repellat veritatis neque cumque perferendis autem itaque odio ea tempore vitae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse" data-target="#collapsefive">
+                                        <h3 class="text-capitalize">Hosting Price ?</h3>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsefive" class="collapse">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro quidem dolorem quisquam? Magni adipisci delectus ullam repellat veritatis neque cumque perferendis autem itaque odio ea tempore vitae.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Frequently Asked Question Section Ends -->
+        <!-- Contact Us Section Starts -->
+        <section class="contact" id="contact-us">
+            <div class="contact-title text-center">
+                <h1 class="text-capitalize roboto">get in <span class="span-color">touch</span></h1>
+            </div>
+            <!-- contact us form -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- first column -->
+                    <div class="col-lg-4p-0">
+                        <div class="contact-us-heading mb-4">
+                            <h4 class="text-capitalize roboto">for any queries and support</h4>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-content">
+                                <i class="fas fa-location-arrow"></i>
+                                <h4>Company Location</h4>
+                                <p class="text-muted">199, xyz building, New Delhi</p>
+                            </div>
+                            <!-- mail icon -->
+                            <div class="contact-content">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Write to us at</h4>
+                                <p class="text-muted">info@gamil.com</p>
+                            </div>
+                            <!-- call icon -->
+                            <div class="contact-content">
+                                <i class="fas fa-phone"></i>
+                                <h4>Call us on</h4>
+                                <p class="text-muted">+91 24356**</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second column or form section -->
+                    <div class="col-lg-8">
+                        <form action="index.html">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-styling" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-styling" placeholder="Your E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control form-styling" placeholder="Your Phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-styling" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea rows="5" class="form-control form-textarea" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us Section Starts -->
+        <!-- Footer Section Starts -->
+        <footer>
+            <div class="container border-bottom pb-4">
+                <div class="row">
+                    <!-- About us column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-us">
+                            <h4 class="text-capitalize text-white">about us</h4>
+                            <p class="text-capitalize text-white">Lorem ipsum dolor sit amet adipisicing elit. Debitis earum possimus numquam dolores?</p>
+                        </div>
+                    </div>
+                    <!-- company column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="company">
+                            <h4 class="text-capitalize text-white">company</h4>
+                            <div class="content">
+                                <ul>
+                                    <li>privacy policy</li>
+                                    <li>terms and conditions</li>
+                                    <li>latest blogs</li>
+                                    <li>app services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="company">
+                            <h4 class="text-capitalize text-white">quick links</h4>
+                            <div class="content">
+                                <ul>
+                                    <li>home</li>
+                                    <li>features</li>
+                                    <li>screenshots</li>
+                                    <li>pricing</li>
+                                    <li>testimonials</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- social pages column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="company">
+                            <h4 class="text-capitalize text-white">social pages</h4>
+                            <div class="content">
+                                <ul>
+                                    <li>facebook</li>
+                                    <li>twitter</li>
+                                    <li>instagram</li>
+                                    <li>linkedin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- credit section -->
+            <div class="credit d-flex justify-content-center align-items-center">
+                <p class="m-0 text-capitalize">designed <i class="fas fa-drafting-compass"></i> by fahad saifi</p>
+            </div>
+        </footer>
+        <!-- Footer Section Ends -->
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
